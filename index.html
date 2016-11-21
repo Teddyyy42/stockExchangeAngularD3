@@ -11,8 +11,6 @@
 <body ng-app="stock">
     <div ng-controller="ResourceController">
         <nvd3 options="options" data="data" class="with-3d-shadow with-transitions"></nvd3>
-        <button class="btn btn-default" type="button" ng-click="start()">Start</button>
-        <button class="btn btn-default" type="button" ng-click="stop()">Stop</button>
         <table class="table table-striped table-bordered">
             <tbody>
                 <tr>
@@ -31,6 +29,10 @@
                 </tr>
             </tbody>
         </table>
+        <div class="text-center">
+            <button class="btn btn-success" type="button" ng-click="start()">Start</button>
+            <button class="btn btn-danger" type="button" ng-click="stop()">Stop</button>
+        </div>
     </div>
     <script src="bundle.js"></script>
     <script src="node_modules/angular-resource/angular-resource.min.js"></script>
